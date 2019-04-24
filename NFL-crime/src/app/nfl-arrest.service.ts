@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Crime, Team, Player } from './module';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' //provides service in app.module, with the alias 'root' 
 })
 export class NFLArrestService {
   private nflUrl = 'http://NflArrest.com/api/v1';
@@ -26,4 +26,3 @@ export class NFLArrestService {
   }
 
 }
-
