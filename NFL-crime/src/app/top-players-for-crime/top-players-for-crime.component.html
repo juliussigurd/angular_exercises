@@ -6,6 +6,6 @@
 <ul>
     <li *ngFor='let player of players | async'>
           {{player.Name}}
-          {{player.arrest_count}}
-  </li>
+          <p> Incidents: {{player.arrest_count}}</p>
+    </li>
 </ul>

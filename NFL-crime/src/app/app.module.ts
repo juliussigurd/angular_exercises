@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { TopCrimeComponent } from './top-crime/top-crime.component';
 import { TopPlayersForCrimeComponent } from './top-players-for-crime/top-players-for-crime.component';
 import { TopTeamsForCrimeComponent } from './top-teams-for-crime/top-teams-for-crime.component';
+import { CrimeTimeLineComponent } from './crime-time-line/crime-time-line.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopCrimeComponent,
     TopPlayersForCrimeComponent,
-    TopTeamsForCrimeComponent
+    TopTeamsForCrimeComponent,
+    CrimeTimeLineComponent,
   ],
   imports: [
     BrowserModule,

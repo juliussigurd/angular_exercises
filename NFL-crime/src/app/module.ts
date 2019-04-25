@@ -3,6 +3,12 @@ export class Crime {
     arrest_count: string
 }
 
+export class TimeLine{
+    Month: string;
+    Year: string;
+    arrest_count: string;
+}
+
 export class Team {
     Team: string;
     Team_name: string;

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NFLArrestService } from '../nfl-arrest.service';
-import { Crime } from '../module';
+import { Crime, TimeLine } from '../module';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -18,5 +18,5 @@ export class TopCrimeComponent implements OnInit {
   ngOnInit() {
     this.crimes = this.service.getTopCrimes()
   }
-
+  
 }

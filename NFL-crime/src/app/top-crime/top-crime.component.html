@@ -1,12 +1,19 @@
-<h2>
-  NFL Top crimes
-</h2>
+<body>
+  <h2>
+    NFL Top crimes
+  </h2>
 
-<ul>
-    <li *ngFor='let crime of crimes | async'>
-      {{crime.Category}}
-      {{crime.arrest_count}} -
-      <a routerLink = "/topPlayers/{{crime.Category}}">Players</a> -
-      <a routerLink = "/topTeams/{{crime.Category}}">Teams</a>
-    </li>
-</ul>
+  <ul>
+      <li *ngFor='let crime of crimes | async'>
+        <b>{{crime.Category}}</b> 
+        <p> Incidents: {{crime.arrest_count}} 
+          
+            <button class="btn btn1" routerLink = "/topTeams/{{crime.Category}}">Teams</button>
+          
+          
+            <button class="btn btn1" routerLink = "/topPlayers/{{crime.Category}}">Players</button>
+          
+        </p>
+      </li>
+  </ul>
+</body>

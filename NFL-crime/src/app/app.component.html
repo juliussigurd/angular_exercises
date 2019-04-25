@@ -1,8 +1,18 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
+<body>
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
 
-<router-outlet></router-outlet>
+  <div id="col-1">
+      <router-outlet></router-outlet>
+  </div>
+
+  <div id="col-2">
+      <h2>Graph showing timeline over crimes</h2>
+      <app-crime-time-line></app-crime-time-line>
+      
+  </div>
+</body>
