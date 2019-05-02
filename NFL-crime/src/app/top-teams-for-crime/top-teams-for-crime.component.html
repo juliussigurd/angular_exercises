@@ -4,11 +4,13 @@
 </h2>
   
   <ul>
-      <li *ngFor='let team of teams | async'>
-            <p>Abbreviation: {{team.Team}}</p>
-            <p>Team: {{team.Team_name}}</p>
-            <p>City: {{team.Team_city}}</p>
-            <p>Incidents: {{team.arrest_count}}</p>
-    </li>
+        <ol>
+            <li *ngFor='let team of teams | async'>
+                    <p>Abbreviation: {{team.Team}}</p>
+                    <p>Team: {{team.Team_name}}</p>
+                    <p>City: {{team.Team_city}}</p>
+                    <p>Incidents: {{team.arrest_count}}</p>
+            </li>
+        </ol>
   </ul>
   

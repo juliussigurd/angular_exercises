@@ -3,10 +3,10 @@
     background-color: DodgerBlue; /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
-    padding: 20px; /* Some padding */
+    padding: 10px; /* Some padding */
     text-align: center;
     text-decoration: none;
-    font-size: 16px; /* Set a font size */
+    font-size: 12px; /* Set a font size */
     margin: 4px 2px;
     cursor: pointer; /* Mouse pointer on hover */
   }

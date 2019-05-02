@@ -6,11 +6,11 @@ import { TopTeamsForCrimeComponent } from './top-teams-for-crime/top-teams-for-c
 import { CrimeTimeLineComponent } from './crime-time-line/crime-time-line.component';
 import { CHART } from 'chart.js';
 
-const routes: Routes = [
-  { path: '', component: TopCrimeComponent }, 
+const routes: Routes = [  
+  { path: '', component: TopCrimeComponent },  
   { path: 'topPlayers/:crimeID', component: TopPlayersForCrimeComponent},
   { path: 'topTeams/:crimeID', component: TopTeamsForCrimeComponent},
-  { path: 'crimeTimeLine/:crimeID', component: CrimeTimeLineComponent},
+  // { path: 'crimeTimeLine/:crimeID', component: CrimeTimeLineComponent},
 ];
 
 @NgModule({

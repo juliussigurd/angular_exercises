@@ -8,6 +8,8 @@ import { TopCrimeComponent } from './top-crime/top-crime.component';
 import { TopPlayersForCrimeComponent } from './top-players-for-crime/top-players-for-crime.component';
 import { TopTeamsForCrimeComponent } from './top-teams-for-crime/top-teams-for-crime.component';
 import { CrimeTimeLineComponent } from './crime-time-line/crime-time-line.component';
+import { TopTeamsComponent } from './top-teams/top-teams.component';
+import { TopPlayersComponent } from './top-players/top-players.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { CrimeTimeLineComponent } from './crime-time-line/crime-time-line.compon
     TopPlayersForCrimeComponent,
     TopTeamsForCrimeComponent,
     CrimeTimeLineComponent,
+    TopTeamsComponent,
+    TopPlayersComponent,
   ],
   imports: [
     BrowserModule,

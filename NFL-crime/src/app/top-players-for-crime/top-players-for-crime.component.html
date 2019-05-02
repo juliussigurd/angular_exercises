@@ -4,8 +4,10 @@
 </h2>
 
 <ul>
-    <li *ngFor='let player of players | async'>
-          {{player.Name}}
-          <p> Incidents: {{player.arrest_count}}</p>
-    </li>
+    <ol>
+      <li *ngFor='let player of players | async'>
+            {{player.Name}}
+            <p> Incidents: {{player.arrest_count}}</p>
+      </li>
+    </ol>
 </ul>

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Crime, Team, Player, TimeLine } from './module';
+import { Crime, Team, Player, TimeLine, TopTeam, TopPlayer } from './module';
 
 @Injectable({
   providedIn: 'root' //provides service in app.module, with the alias 'root' 
@@ -16,6 +16,16 @@ export class NFLArrestService {
   //Top Crimes
   getTopCrimes(): Observable<Crime[]> {
     return this.http.get<Crime[]>(this.nflUrl+'/crime')
+  }
+
+  //Top Teams
+  getTopTeams():Observable<TopTeam[]> {
+    return this.http.get<TopTeam[]>(this.nflUrl+'/team')
+  }
+
+  //Top Players
+  getTopPlayers():Observable<TopPlayer[]> {
+    return this.http.get<TopPlayer[]>(this.nflUrl+'/player')
   }
 
   //Top Players For Crime

@@ -1,0 +1,17 @@
+<body>
+  <h2>
+    Top teams
+  </h2>
+
+  <ul>
+    <ol>
+      <li *ngFor='let TopTeam of TopTeams | async'>
+        <b> {{TopTeam.Team_name}} ({{TopTeam.Team}})</b>
+        <p> Incidents: {{TopTeam.arrest_count}}</p>
+      </li>
+    </ol>
+  </ul>
+
+
+</body>
+  
