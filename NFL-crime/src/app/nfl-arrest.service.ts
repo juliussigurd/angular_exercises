@@ -14,8 +14,8 @@ export class NFLArrestService {
   ) { }
 
   //Top Crimes
-  getTopCrimes(): Observable<Crime[]> {
-    return this.http.get<Crime[]>(this.nflUrl+'/crime')
+  getTopCrimes(limit): Observable<Crime[]> {
+    return this.http.get<Crime[]>(this.nflUrl+'/crime?limit=' + limit)
   }
 
   //Top Teams

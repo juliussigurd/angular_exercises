@@ -13,10 +13,21 @@ import { Observable } from 'rxjs';
 export class TopCrimeComponent implements OnInit {
   crimes: Observable<Crime[]>
 
+  numberLoaded: number = 2;
+
   constructor(private service: NFLArrestService) { }
 
   ngOnInit() {
-    this.crimes = this.service.getTopCrimes()
+    this.getTopCrimes(this.numberLoaded);
+  }
+
+  showMore() {
+    this.numberLoaded += 2;
+    this.getTopCrimes(this.numberLoaded);
+  }
+
+  getTopCrimes(limit) {
+    this.crimes = this.service.getTopCrimes(limit);
   }
   
 }
